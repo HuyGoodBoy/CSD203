@@ -7,8 +7,8 @@ for i in range(kichthuoc):
 def timsogantrungbinhnhat(danhsach):
     trungbinhcong=sum(danhsach)/len(danhsach)
     gan_trung_binh = min(danhsach, key=lambda x: abs(x - trungbinhcong))
-    vitri= danhsach.index(gan_trung_binh)
+    vitri= danhsach.index(gan_trung_binh)+1
     return vitri
 ketqua= timsogantrungbinhnhat(arr)
-print('so gan nhat la',ketqua)
+print('Vị trí của số gần nhất là:',ketqua)
 
